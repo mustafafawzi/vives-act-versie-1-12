@@ -1,0 +1,10 @@
+﻿@model VivesActivity
+
+<tr>
+    <td>@Model.Name</td>
+    <td>@Model.Location?.Name</td>
+    <td>@Model.Type</td>
+    <td>
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-secondary">Edit</a>
+    </td>
+</tr>
